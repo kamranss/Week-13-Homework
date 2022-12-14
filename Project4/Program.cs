@@ -5,6 +5,9 @@
 using Domain.Models;
 using Service.Service;
 
+#region Lamda expression Delegates
+// Identifing Sum of the average salaries employees within the list considering that their age shoud be between 20 and 40 
 EmployeeFunc iteration = new EmployeeFunc();
 
-iteration.Check();
+iteration.SumAvgSalary();
+#endregion
