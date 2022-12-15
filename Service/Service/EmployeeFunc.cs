@@ -29,7 +29,7 @@ namespace Service.Service
         #endregion
 
         //Action<string, string, int> Functions = (a, b, c) => { Console.WriteLine(); };
-        public void Check()
+        public void SumAvgSalary()
         {
             Employee employee1 = new Employee(19, 4000, "Kamran");
             Employee employee2 = new Employee(27, 1500, "Kamil");

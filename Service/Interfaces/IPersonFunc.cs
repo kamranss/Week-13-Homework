@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Service
+namespace Service.Interfaces
 {
-    public interface IEmployeeFunc
+    public interface IPersonFunc
     {
-        public void SumAvgSalary();
+        public void ShowPersonInfo(Predicate<Person> function);
     }
 }

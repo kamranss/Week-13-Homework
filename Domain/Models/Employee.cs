@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace Domain.Models
 {
-    public class Employee
+    public class Employee:Person
     {
         public int Id { get; private set; }
-        public string Name { get; set; }
         public int Age { get; set; }
-        public int Salary { get; set; }
 
         static int count;
 
