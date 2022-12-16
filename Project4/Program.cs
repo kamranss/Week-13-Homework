@@ -28,3 +28,24 @@ personFunc.ShowPersonInfo(personFunc.Check);
 Console.WriteLine("----------------------------------------");
 #endregion
 
+#region Show number of books according to the Author
+Book book1 = new Book("Kamran Suleyman","Secrsts of Pandora");
+
+Book book2 = new Book("Albert Jack", "Delicious Sandwich");
+
+Book book3 = new Book("Albert Jack", "Beautiful Lazanya");
+
+Book book4 = new Book("Kianu Rives", "Struggles of a Fatman");
+
+Book book5 = new Book("Nizami", "Secrsts of Pandora");
+
+BookFunc BookList = new BookFunc();
+BookList.Books.Add(book1);
+BookList.Books.Add(book2);
+BookList.Books.Add(book3);
+BookList.Books.Add(book4);
+BookList.Books.Add(book5);
+
+Console.WriteLine(BookList.Numberofbook(book => book.Author == "Nizami"));
+
+#endregion

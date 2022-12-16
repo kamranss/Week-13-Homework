@@ -13,9 +13,13 @@ namespace Domain.Models
 
         static int count;
 
-        public Employee(int age, int salary, string name)
+        static Employee()
         {
             count = 0;
+        }
+        public Employee(int age, int salary, string name)
+        {
+            
             Id = ++count;
             Name = name;
             Age = age;
