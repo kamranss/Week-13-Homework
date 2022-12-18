@@ -15,7 +15,8 @@ namespace Service.Service
         {
             return person.Salary > 1000;
         }
-        public void ShowPersonInfo(Predicate<Person> function)
+
+        private List<Person> peopleinfo()
         {
             Person person1 = new Person();
             person1.Name = "Elman";
@@ -39,8 +40,13 @@ namespace Service.Service
             list.Add(person1);
             list.Add(person2);
             list.Add(person3);
+            return list;
+        }
+        public void ShowPersonInfo(Predicate<Person> function)
+        {
+            
 
-            foreach (var item in list)
+            foreach (var item in peopleinfo())
             {
                 if (function(item))
                 {

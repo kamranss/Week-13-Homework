@@ -17,14 +17,17 @@ Console.WriteLine("----------------------------------------");
 PersonFunc personFunc  = new PersonFunc();
 
 personFunc.ShowPersonInfo(person => person.Salary > 1000);
-
+personFunc.ShowPersonInfo(person => person.Name== "Elman");
 Console.WriteLine("----------------------------------------");
 
 personFunc.ShowPersonInfo(delegate (Person person) { return person.Salary > 1000; });
+Console.WriteLine("--");
+personFunc.ShowPersonInfo(delegate (Person person) { return person.Name == "Elman"; });
 
+Console.WriteLine("--");
 Console.WriteLine("----------------------------------------");
-personFunc.ShowPersonInfo(personFunc.Check);
 
+personFunc.ShowPersonInfo(personFunc.Check);
 Console.WriteLine("----------------------------------------");
 #endregion
 
